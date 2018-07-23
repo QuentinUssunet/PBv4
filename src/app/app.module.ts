@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '../../node_modules/@angular/forms';
 import { RouterModule } from '../../node_modules/@angular/router';
 import { ROUTES } from 'routes';
+import { ClientsService } from './clients.service';
+import { ComptesService } from './comptes.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,10 @@ import { ROUTES } from 'routes';
     HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    ClientsService,
+    ComptesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
