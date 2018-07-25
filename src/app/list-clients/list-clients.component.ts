@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'PBv4-list-client',
-  templateUrl: './list-client.component.html',
-  styleUrls: ['./list-client.component.css']
+  selector: 'PBv4-list-clients',
+  templateUrl: './list-clients.component.html',
+  styleUrls: ['./list-clients.component.css']
 })
-export class ListClientComponent implements OnInit {
+export class ListClientsComponent implements OnInit {
 
   constructor() { }
 
